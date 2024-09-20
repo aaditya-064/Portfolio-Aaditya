@@ -6,12 +6,11 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = await axios({
+    await axios({
       url: "https://portfolio-org.onrender.com/post",
       method: "post",
       data: info,
     });
-    console.log(data);
   };
 
   const handleChange = (e) => {

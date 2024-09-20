@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,19 +13,21 @@ const Hero = () => {
       </div>
       <div className="flex flex-col items-center mt-10">
         <p className="text-2xl text-white text-center font-normal">
-          HI, <br /> I'M
-          <span className="text-[#ffcb6c] text-4xl ml-2">Aaditya Shrestha</span>
+          <span className="dev_title">HI</span>, <br /> I'M
+          <span className="text-[#ffcb6c] text-4xl ml-2 name_title">
+            Aaditya Shrestha
+          </span>
         </p>
-        <p className="font-medium mt-2 text-lg text-[#e7e6e7]">
+        <p className="font-light text-center mt-2 text-xl text-[#e7e6e7] dev_title underline">
           Full Stack Developer
           <span className="font-light"> based in Nepal</span>
         </p>
-        <a
-          href="#"
+        <Link
+          to={"/contact"}
           className="mt-7 text-[#ffcb6c] font-medium border border-[#ffcb6c] w-36 px-3 pl-7 py-2 rounded"
         >
           Contact Me
-        </a>
+        </Link>
       </div>
     </div>
   );

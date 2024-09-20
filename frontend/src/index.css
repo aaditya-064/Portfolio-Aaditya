@@ -4,42 +4,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* font-family: "Baskervville SC", serif;
-font-weight: 400;
-font-style: normal; */
+.connect_text {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
 
-/* font-family: "Matemasie", sans-serif;
-font-weight: 400;
-font-style: normal; */
-
-.name_header {
-  /* font-family: "Rubik Glitch", system-ui;
+body {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal; */
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
 }
 
-.type_work {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
+.enter_details {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-.nav_links {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
+.name_title {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+.dev_title {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

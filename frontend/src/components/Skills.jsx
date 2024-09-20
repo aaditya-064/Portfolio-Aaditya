@@ -8,29 +8,37 @@ const Skills = () => {
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10 gap-x-0 gap-y-10 ml-10">
         <div className="flex flex-col items-center select-none">
           <img src="/html-5.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">HTML</p>
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
+            HTML
+          </p>
         </div>
         <div className="flex flex-col">
           <img src="/CSS.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">CSS</p>
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
+            CSS
+          </p>
         </div>
         <div className="flex flex-col">
           <img src="/js.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
             JAVASCRIPT
           </p>
         </div>
         <div className="flex flex-col">
           <img src="/react.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">REACT JS</p>
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
+            REACT JS
+          </p>
         </div>
         <div className="flex flex-col">
           <img src="/node.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">NODE JS</p>
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
+            NODE JS
+          </p>
         </div>
         <div className="flex flex-col">
           <img src="/bootstrap.png" alt="" className="h-20 w-20 mx-auto" />
-          <p className="text-center mt-2 text-gray-300 font-normal">
+          <p className="text-center text-sm mt-3 text-gray-300 font-medium">
             BOOTSTRAP
           </p>
         </div>
