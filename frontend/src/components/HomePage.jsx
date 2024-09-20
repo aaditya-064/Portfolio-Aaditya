@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="py-4 bg-[#34353a] flex flex-col">
       <div className="max-w-[1150px] mx-auto flex flex-col justify-evenly">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="flex-1">
           <div className="mt-[150px]">
             <Hero />
