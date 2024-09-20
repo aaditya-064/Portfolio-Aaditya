@@ -1,9 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="flex justify-evenly gap-24 items-center z-50 sticky top-0 bg-gradient-to-r from-slate-800 to-indigo-900 w-screen">
+    <div className="flex justify-between sm:justify-evenly gap-24 items-center z-50 sticky top-0 w-full text-white duration-300 backdrop-blue-50  backdrop-blur-lg">
       <Link to={"/"} className="text-white font-medium text-2xl">
         <svg
           width="50"
@@ -28,23 +35,45 @@ const Navbar = () => {
           </g>
         </svg>
       </Link>
-      <div className="gap-4 text-sm text-white font-medium hidden md:flex select-none">
-        <Link to={"/"} className="outline-none">
-          Home
-        </Link>
-        <Link to={"/contact"} className="outline-none">
-          Contact
-        </Link>
+      <div className="sm:hidden">
+        <button onClick={toggleMenu}>
+          {isOpen ? (
+            <FaTimes className="text-white w-6 h-6" />
+          ) : (
+            <FaBars className="text-white w-6 h-6" />
+          )}
+        </button>
       </div>
-      <a
-        href="https://calendly.com/aadityastha123456/30min"
-        target="blank"
-        className="bg-transparent text-white text-[16px] text-center px-4 py-2 rounded border border-white hover:bg-white hover:text-[#2d2d72] transition-all"
+
+      <div
+        className={`flex flex-col sm:flex-row gap-6 fixed sm:static top-14 right-0 h-full sm:h-auto p-6 sm:p-0 transition-transform duration-500 items-center ease-in-out transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } sm:translate-x-0`}
       >
-        Let's Talk
-      </a>
+        <div className="flex flex-col sm:flex-row gap-4 text-right">
+          <Link
+            className="hover:text-gray-300 transition-all text-sm"
+            to={"/"}
+            onClick={toggleMenu}
+          >
+            Home
+          </Link>
+          <Link
+            className="hover:text-gray-300 transition-all text-sm"
+            to={"/contact"}
+            onClick={toggleMenu}
+          >
+            Contact Us
+          </Link>
+        </div>
+        <a
+          href="https://calendly.com/aadityastha123456/30min"
+          target="blank"
+          className="bg-transparent text-white text-[16px] text-center px-4 py-2 rounded border border-white hover:bg-white hover:text-[#2d2d72] transition-all"
+        >
+          Let's Talk
+        </a>
+      </div>
     </div>
   );
-};
-
-export default Navbar;
+}
