@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div>
       <p className="text-left text-4xl text-white font-bold">My Works</p>
-      <div className="mt-10 ml-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="mt-10 ml-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center md:place-items-start">
         <a href="#" target="blank">
           <div className="w-80 bg-gradient-to-r from-slate-900 to-gray-950 py-7 px-14 rounded">
             <p className="text-center text-white font-bold text-lg">

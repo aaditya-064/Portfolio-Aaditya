@@ -2,16 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="border-t-2 mt-10">
-      <div className="flex items-center mx-auto flex-col sm:flex-row sm:justify-between">
+    <div className="border-t-2 mt-10 w-screen">
+      <div className="flex justify-evenly">
         <div className="mt-4">
-          <img
+          {/* <img
             src="/portrait2.jpg"
             alt=""
             className="h-7 w-7 rounded-full object-contain"
-          />
+          /> */}
         </div>
-        <div className="mt-4 flex flex-col sm:flex-row gap-2">
+        <div className="mt-4 flex gap-2">
           <a href="https://www.linkedin.com/in/aaditya-shrestha-148318286/">
             <img src="/linkedin.png" alt="Linkedin" className="h-6 w-6" />
           </a>
