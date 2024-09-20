@@ -15,12 +15,12 @@ const ContactForm = () => {
               alt=""
             /> */}
             <div className="mx-auto  rounded w-4/5">
-              <p className="text-white font-bold text-4xl text-center p-5 connect_text">
+              <p className="font-bold text-4xl text-center p-5 connect_text text-[#ffcb6c]">
                 Let's Connect
               </p>
               <div className="p-5 md:w-3/5 mx-auto rounded">
                 <form action="" className="">
-                  <p className="text-center text-white font-medium text-2xl enter_details">
+                  <p className="text-center text-gray-300 font-medium text-2xl enter_details">
                     Enter the Details
                   </p>
                   <div className="flex flex-col md:flex-row justify-between mt-4">
