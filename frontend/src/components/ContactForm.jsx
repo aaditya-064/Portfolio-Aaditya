@@ -9,7 +9,7 @@ const ContactForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInfo({ ...info, [name]: value });
-    console.log(info);
+    // console.log(info);
   };
 
   const handleSubmit = async (e) => {
@@ -18,7 +18,16 @@ const ContactForm = () => {
       url: "https://portfolio-org.onrender.com/add/client",
       method: "post",
       data: info,
-    });
+    })
+      .then((response) => {
+        console.log("Client added successfully:", response.data);
+      })
+      .catch((error) => {
+        console.error(
+          "Error adding client:",
+          error.response ? error.response.data : error.message
+        );
+      });
     setInfo({
       first_name: "",
       last_name: "",
