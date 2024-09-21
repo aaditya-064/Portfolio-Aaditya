@@ -8,10 +8,10 @@ import Contact from "./Contact";
 
 const HomePage = () => {
   return (
-    <div className="py-4 bg-gradient-to-r from-slate-800 to-indigo-900 flex flex-col">
+    <div className="py-4 bg-gradient-to-r from-slate-800 to-indigo-900 flex flex-col overflow-hidden">
       <div className="max-w-[1150px] mx-auto flex flex-col justify-evenly">
         <Navbar />
-        <div className="flex-1">
+        <div className="flex-grow">
           <div className="mt-[150px]">
             <Hero />
           </div>
