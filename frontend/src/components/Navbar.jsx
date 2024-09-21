@@ -63,7 +63,7 @@ export default function Navbar() {
             to={"/contact"}
             onClick={toggleMenu}
           >
-            Contact Us
+            Contact
           </Link>
         </div>
         <a
