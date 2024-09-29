@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="flex justify-center">
         <img
           src="/potrait.jpg"
-          className="h-44 rounded-full w-44 sm:h-64 sm:w-64 object-cover"
+          className="h-44 rounded-full w-44 sm:w-64 md:w-96 lg:w-36 object-cover"
           alt=""
         />
       </div>
