@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Skills from "./Skills";
-import Footer from "./Footer";
-import Project from "./Project";
-import Contact from "./Contact";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Skills from "../components/Skills";
+import Footer from "../components/Footer";
+import Project from "../components/Project";
+import Contact from "../components/Contact";
 
 const HomePage = () => {
   return (
