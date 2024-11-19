@@ -26,7 +26,7 @@ const Project = () => {
             <img src="/twitter.jpeg" className="mx-auto rounded mt-3" alt="" />
             <p className="mx-auto text-center text-gray-300 text-sm font-medium mt-3 w-44">
               This is the clone of the landing page of the twitter I made using
-              simple HTML and Bootstrap as a framework of CSS.
+              HTML and Bootstrap as a framework of CSS.
             </p>
           </div>
         </a>
