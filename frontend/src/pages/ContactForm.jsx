@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import axios from "axios";
 
 const ContactForm = () => {
@@ -15,7 +15,8 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios({
-      url: "https://portfolio-org.onrender.com/add/client",
+      url: "http://localhost:8080",
+      // url: "https://portfolio-org.onrender.com/add/client",
       method: "post",
       data: info,
     })

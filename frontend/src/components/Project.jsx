@@ -30,10 +30,7 @@ const Project = () => {
             </p>
           </div>
         </a>
-        <a
-          href="https://youtube-clone-1npfp41qq-aaditya-064s-projects.vercel.app/"
-          target="blank"
-        >
+        <a href="https://youtube-clone-school.vercel.app/" target="blank">
           <div className="w-80 bg-gradient-to-r from-slate-900 to-gray-950 py-7 px-14 rounded">
             <p className="text-center text-white font-bold text-lg">
               YouTube Clone
