@@ -29,6 +29,7 @@ var corsOptions = {
 
 const app = express();
 app.use(express.json());
+app.use(morgan("dev"));
 app.use(cors(corsOptions));
 app.use("/", router);
 app.use(morgan("tiny"));

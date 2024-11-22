@@ -7,7 +7,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios({
-      url: "https://portfolio-org.onrender.com/post/",
+      url: "http://localhost:8080/post/",
       method: "post",
       data: info,
     });
